@@ -4,13 +4,11 @@
 
 This recipe is for creating a skill that will call the Ollama CLI and return structured data for your agent. This example is for offloading machine vision identification to a local model. The recipe assumes you have Ollama installed and have pulled down a vision capable model.
 
- 
 
 ## Step 1
 
 Place some image files into a directory that your coding agent will have access to.
 
- 
 
 ## Step 2
 
@@ -41,9 +39,6 @@ Here is the Ollama command for creating model reference that uses the above syst
 `ollama create qwen3.5:4b_vision_json -f ./Modelfile`
 
 
-                    .
-
-
 ## Step 3
 
 Place the skill or agent markdown file into either your project workspace or your coding system's global skills directory. Here's a SKILL.md file that can be used in Claude Code:
@@ -61,9 +56,6 @@ ollama run qwen3.5:4b_vision_json --think=false "What is in this image? <variabl
 ````
 
 **Note:** the above tag-like <variable> for your agent to decide what to put there.
-
-
-                    .
 
 
 ## Step 4
