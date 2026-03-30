@@ -40,7 +40,9 @@ Here is the Ollama command for creating model reference that uses the above syst
 
 `ollama create qwen3.5:4b_vision_json -f ./Modelfile`
 
+
  
+
 
 ## Step 3
 
@@ -60,7 +62,9 @@ ollama run qwen3.5:4b_vision_json --think=false "What is in this image? <variabl
 
 **Note:** the above tag-like <variable> for your agent to decide what to put there.
 
+
  
+
 
 ## Step 4
 
